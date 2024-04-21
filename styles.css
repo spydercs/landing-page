@@ -10,8 +10,7 @@ body {
   color: #F9FAF8;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .header_main, .footer_main {
@@ -29,15 +28,20 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 50px 10px 50px;
-  max-width: 800px;
+  justify-content: space-around;
+  padding: 0px 50px 0px 50px;
+}
+
+.header_logo {
+  font-size: 24px;
+  color: #F9FAF8;
 }
 
 .links {
   font-size: 18px;
   color: #E5E7EB;
   font-family: Roboto, sans-serif;
+  gap: 16px;
 }
 
 .secondary_header {
@@ -46,15 +50,15 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 50px 100px 50px 100px;
-  gap: 20px;
-  max-width: 800px;
+  justify-content: space-between;
+  padding: 50px 50px 50px 50px;
+  gap: 50px;
+  align-self: center;
 }
 
-.header_logo {
-  font-size: 24px;
-  color: #F9FAF8;
+.container1 {
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 button {
@@ -65,11 +69,8 @@ button {
 
 ul {
   list-style-type: none;
-  orientation: horizontal;
   display: flex;
   gap: 18px;
-  margin: 0;
-  padding: 18px;
 }
 
 a {
@@ -78,9 +79,10 @@ a {
 }
 
 .img1 {
-  height: 200px;
-  width: 400px;
-  flex-shrink: 0.6;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 1;
+  flex-grow: 1;
   margin: 0;
   display: flex;
   align-items: center;
@@ -108,7 +110,7 @@ h2 {
   padding: 12px;
   gap: 52px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -128,9 +130,8 @@ h2 {
   font-size: 18px;
   font-weight: light;
   font-style: italic;
-  display: flex;
   text-align: center;
-  max-width: 200px;
+  max-width: 160px;
 }
 
 .mid2 {
@@ -138,6 +139,12 @@ h2 {
   display: flex;
   align-items: center;
   padding: 100px;
+  flex-direction: column;
+}
+
+.quotebox {
+  display: flex;
+  align-items; center;
   flex-direction: column;
 }
 
@@ -160,7 +167,10 @@ h3 {
 
 .mid3 {
   display: flex;
-  background-color: #F9FAF8;
+  flex: 1;
+  flex-direction: column;
+  background-color: white;
+  padding: 50px 100px 50px 100px;
 }
 
 .bluebox {
@@ -169,13 +179,17 @@ h3 {
   display: flex;
   margin: 100px;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 50px 10px 50px;
 }
 
 .call_to_action {
   margin: 20px;
+}
+
+.p3 {
+  max-width: 400px;
 }
 
 .white_border {
